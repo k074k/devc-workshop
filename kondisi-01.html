@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		const input = Number(prompt("Masukkan Sebuah Angka"))
+
+		if (isNaN(input) == true) {
+			console.log(`Bukan Angka`)
+		} else {
+			//console.log("Angka")
+			
+			if (input > 0) {
+				console.log(`${input} adalah Bilangan Positif, dan`)
+			} else {
+				if (input < 0) {
+					console.log(`${input} adalah Bilangan Negatif, dan`)
+				} else {
+					console.log(`${input} adalah Nol`)
+				}
+			}
+
+			if (input % 2 == 0) {
+				console.log(`${input} adalah Bilangan Genap`)
+			} else {
+				console.log(`${input} adalah Bilangan Ganjil`)
+			}
+		}
+	</script>
+</body>
+</html>
