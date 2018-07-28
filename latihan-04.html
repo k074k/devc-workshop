@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		const number1 = Number(prompt("Masukkan Angka Pertama:"))
+
+		if (isNaN(number1) == true) {
+			console.log(`Inputan Anda Salah!`)
+		} else {
+			const number2 = Number(prompt("Masukkan Angka Kedua:"))
+
+			if (isNaN(number2) == true) {
+				console.log(`Inputan Anda Salah!`)
+			}else if (number1 < number2) {
+				console.log(`${number1} lebih kecil dari ${number2}`)
+			} else if (number1 > number2) {
+				console.log(`${number1} lebih besar dari ${number2}`)
+			} else {
+				console.log(`${number1} sama dengan ${number2}`)
+			}	
+		}		
+	</script>
+</body>
+</html>
