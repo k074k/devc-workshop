@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		const account = {
+			name: 'Alex',
+			balance: 0,
+
+			credit(num) {
+				this.balance += num
+			},
+
+			describe() {
+				console.log(`Nama ${this.name} dengan Balance ${this.balance}`)
+			}
+		}
+
+		account.credit(20)
+		account.credit(100)
+		account.describe()
+
+	</script>
+</body>
+</html>
