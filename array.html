@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		//const values = [3, 11, 7, 2, 9, 10]
+		let result_max = 0;
+		let result_sum = 0;
+
+		function sum(val) {
+			console.log(val)
+			for (let i = 0; i < val.length; i++)	{
+				result_sum += val[i]
+			}
+			
+			console.log(result_sum)
+		}
+
+		function max(val) {
+			console.log(val)
+			result_max = val[0]
+			for (let i = 0; i < val.length; i++)	{
+				if (result_max < val[i]) {
+					result_max = val[i]
+				}
+			}
+			console.log(result_max)
+		}
+		
+		//sum([3, 11, 7, 2, 9, 10])
+		sum([1, 2, 3])
+
+		max([-9, -3])
+		
+	</script>
+</body>
+</html>
