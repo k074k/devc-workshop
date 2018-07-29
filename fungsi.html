@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		let hasil = 0;
+
+		function calculate (num, operator, num2) {
+			switch(operator) {
+				case "-":
+					hasil = num - num2
+					return hasil
+					break
+				case "*":
+					return num * num2
+					break
+				case "+":
+					return num + num2
+					break
+				case "/":
+					return num / num2
+					break
+			}
+		}
+
+		let num = Number(prompt("Masukan Angka Pertama"))
+		let num2 = Number(prompt("Masukan Angka Kedua"))
+		let operator = String(prompt("Masukan operator"))
+
+		console.log(calculate(num, operator, num2))
+
+
+	</script>
+</body>
+</html>
